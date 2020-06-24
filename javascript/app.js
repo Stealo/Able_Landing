@@ -11,7 +11,7 @@ $('.bloc_image_info').each(function(){
     let TL = new TimelineMax();
 
     TL
-        .fromTo(overlay, 2, {skewX: 30, scale: 1.5},{skewX: 0, xPercent: 100, transformOrigin: "0% 100%" , ease:Power4.easeOut()})
+        .fromTo(overlay, 2, {skewX: 30, scale: 1.5},{skewX: 0, xPercent: 100, scale: 0.5 ,transformOrigin: "50% 0% 0px", ease:Power4.easeOut()})
         .from(projetInfo, 1, {scaleY: 0, transformOrigin: "bottom left"}, "-=1.5")
         .from(smallTitle, 0.3, {autoAlpha: 0, y:30, ease: Power4.easeOut}, "-=0.8")
         .from(projetLink, 0.3, {autoAlpha: 0, y: 30, ease: Power4.easeOut}, "-=0.8")

@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -367,12 +368,19 @@ h5 {
 
 .overlay {
   display: block !important;
-  position: absolute !important;
   left: 0 !important;
   top: 0 !important;
   background: #ffffff !important;
-  width: 100%;
-  height: 100% !important;
+  width: 745px;
+  height: 600px;
+}
+
+.overlay2 {
+  display: block !important;
+  background: #ffffff !important;
+  width: 85%;
+  height: 600px;
+  position: absolute;
 }
 
 .blue_line_right {
@@ -399,6 +407,8 @@ h5 {
 
 .blue_line_desk {
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 .blue_line_desk img {
   height: 3px;
@@ -409,6 +419,8 @@ h5 {
 
 .blue_line_desk_right {
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 .blue_line_desk_right img {
   height: 3px;
@@ -593,6 +605,7 @@ h5 {
 .bloc_info_picto {
   top: 130px;
   left: 110px;
+  z-index: 1;
 }
 
 .button_explo {
